@@ -16,7 +16,7 @@ def hashcode (university, resource,  code):
   return hashlib.md5((university+resource+code).encode()).hexdigest()
 
 def dados_ckan (url):
-    data = requests.get(url+"&limit=30").json()
+    data = requests.get(url+"&limit=100").json()
     print (len (data["result"]["records"] ))
     return data["result"]["records"]
 
