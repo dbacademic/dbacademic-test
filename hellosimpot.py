@@ -5,7 +5,6 @@ from simpot import RdfsClass, BNamespace, graph
 from rdflib.namespace import DC, FOAF
 
 
-# exemplo do rdflib
 class Person:
     nick = FOAF.nick
     name = FOAF.name
